@@ -3,7 +3,7 @@
 Document to show the flow of creating and using the Pivotal Service cf-mgmt tool.
 
 
-1. Start by creating cf-mgmt client and secret in the PAS UAA
+1. Start by creating cf-mgmt client and secret in the PAS UAA. Use the PAS system domain.
 
 ```
 [~]$ uaac target uaa.system.busch.local
@@ -27,7 +27,7 @@ Document to show the flow of creating and using the Pivotal Service cf-mgmt tool
 [~/cf-mgmt]$ git init
 ```
 
-4. Extract the existing configuration from a foundation you have partially configured with orgs, space, and users. Good for extracting inital LDAP configuration, if it's being used
+4. Extract the existing configuration from a foundation you have partially configured with orgs, space, and users. Good for extracting inital LDAP configuration, if it's being used. Use the PAS system domain alone, i.e. `system.domain.com`.
 
 ```
 [~/cf-mgmt]$ cf-mgmt export-config --config-dir=config-me \
@@ -115,7 +115,7 @@ vars.yml file contents
 # git repo uri
 git_repo_uri: git@github.com:cbusch-pivotal/cf-mgmt-lab.git
 
-# cf system domain
+# cf system domain - PAS system domain, example here.
 system_domain: system.busch.local
 
 # user account with permission to create orgs/spaces and client secret for uaac for user_id
