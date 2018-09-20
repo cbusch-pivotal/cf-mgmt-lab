@@ -7,7 +7,7 @@ Document to show the flow of creating and using the Pivotal Service cf-mgmt tool
 
 ```
 [~]$ uaac target uaa.system.busch.local
-[~]$ uaac token client get admin -s Uhu1zRNhttEnLK06QOHbwYOpD_PVe50p
+[~]$ uaac token client get admin -s <PAS UAA Admin Client password>
 [~]$ uaac client add cf-mgmt \
   --name cf-mgmt \
   --secret pivotal1 \
