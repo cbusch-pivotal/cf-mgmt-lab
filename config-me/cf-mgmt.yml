@@ -1,0 +1,6 @@
+enable-delete-isolation-segments: false
+enable-unassign-security-groups: false
+running-security-groups:
+- default_security_group
+staging-security-groups:
+- default_security_group
