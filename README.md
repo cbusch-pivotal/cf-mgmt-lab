@@ -5,6 +5,7 @@ Document to show the flow of creating and using the Pivotal Service cf-mgmt tool
 
 1. Start by creating cf-mgmt client and secret in the PAS UAA
 
+```
 [~]$ uaac target uaa.system.busch.local
 [~]$ uaac token client get admin -s Uhu1zRNhttEnLK06QOHbwYOpD_PVe50p
 [~]$ uaac client add cf-mgmt \
@@ -12,7 +13,7 @@ Document to show the flow of creating and using the Pivotal Service cf-mgmt tool
   --secret pivotal1 \
   --authorized_grant_types client_credentials,refresh_token \
   --authorities cloud_controller.admin,scim.read,scim.write
-
+```
 
 2. Now create directory for your cf-mgmt assets and change into that directory
 
