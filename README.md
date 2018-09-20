@@ -10,7 +10,7 @@ Document to show the flow of creating and using the Pivotal Service cf-mgmt tool
 [~]$ uaac token client get admin -s <PAS UAA Admin Client password>
 [~]$ uaac client add cf-mgmt \
   --name cf-mgmt \
-  --secret pivotal1 \
+  --secret <make up a secret password> \
   --authorized_grant_types client_credentials,refresh_token \
   --authorities cloud_controller.admin,scim.read,scim.write
 ```
