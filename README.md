@@ -1,6 +1,6 @@
 # cf-mgmt-lab configuration
 
-Document to show the flow of creating and using the Pivotal Service cf-mgmt tool.
+Document to show the flow of creating and using the Pivotal Service [cf-mgmt](https://github.com/pivotalservices/cf-mgmt) tool.
 
 
 1. Start by creating cf-mgmt client and secret in the PAS UAA. Use the PAS system domain.
